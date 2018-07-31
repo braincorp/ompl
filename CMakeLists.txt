@@ -5,6 +5,12 @@ if(NOT ${CMAKE_VERSION} VERSION_LESS 3.0.0)
 endif()
 project(ompl CXX C)
 
+# Set our desired settings
+option(OMPL_BUILD_PYTESTS OFF)
+option(OMPL_BUILD_TESTS OFF)
+option(OMPL_BUILD_DEMOS OFF)
+option(OMPL_REGISTRATION OFF)
+
 # set the default build type
 if (NOT CMAKE_BUILD_TYPE)
     # By default, use Release mode
